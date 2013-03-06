@@ -63,11 +63,22 @@ class MVCSystem{
 		$scriptName = explode('/', $_SERVER['SCRIPT_NAME']);
 		
 		for($i= 0;$i < sizeof($scriptName);$i++){
+			if(!isset($requestURI[$i])) break;
 			if ($requestURI[$i]     == $scriptName[$i]){
 				unset($requestURI[$i]);
 			}
 		}
-		$currentURL=array_values($requestURI);		
+		
+		//finish getting the request then transform into $currentURL;
+		$currentURL="";	
+		$requestArray=array_values($requestURI);	
+		for($i=0;$i<count($requestArray);$i++){
+			$currentURL.=$requestArray[$i];
+			if($i!=count($requestArray)){
+				$currentURL.=DIRECTORY_SEPARATOR;
+			}			
+		}		
+		return WEBSITE_ROOT.$currentURL;
 	}
 	
 	public static function redirectTo404($code, $type, $message){

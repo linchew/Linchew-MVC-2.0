@@ -56,7 +56,7 @@ Class Router{
 	
 	private function routing(){
 		//get and handle the request URL
-		$this->getURLRequest();		
+		$this->getURLRequest();
 		$this->handleURLRequest();
 		
 		//mapping with routing Table rules
@@ -123,6 +123,7 @@ Class Router{
 		$scriptName = explode('/', $_SERVER['SCRIPT_NAME']);
 		
 		for($i= 0;$i < sizeof($scriptName);$i++){
+			if(!isset($requestURI[$i])) break;
 			if ($requestURI[$i]     == $scriptName[$i]){
 				unset($requestURI[$i]);
 			}

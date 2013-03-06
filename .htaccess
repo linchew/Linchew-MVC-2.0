@@ -1,21 +1,8 @@
-#------------------------------------
-# Linchew MVC Framework
-# 
-#  @package    Linchew MVC
-#  @version    2.0
-#  @author     Linchew
-#  @license    No Licencse
-#  @copyright  2012 - 2013 Linchew
-#  @link       http://Not.yet
-#------------------------------------
-<IfModule mod_rewrite.c>
-    RewriteEngine on
+RewriteEngine on
 
-	#Rewrite Base is based on the document root
-    RewriteBase /
-	RewriteRule ^(/)?$ index.php/$1 [L]
+RewriteBase /
+RewriteRule ^(/)?$ index.php/$1 [L]
 
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^(.*)$ index.php/$1 [L]
-</IfModule>
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

@@ -8,8 +8,8 @@
  * @license    No Licencse
  * @copyright  2012 - 2013 Linchew
  * @link       http://Not.yet
- *
- * @PHP Ver	   5.3+
+ * 
+ * PHP Ver.	   5.3+
  */
 
 /**
@@ -24,11 +24,10 @@ ini_set('display_errors', 1);
  * (1) CORE_PATH
  * (2) APP_PATH
  */
+
 define('DOCROOT', __DIR__.DIRECTORY_SEPARATOR);
 define('COREPATH', 	realpath(DOCROOT.'/core/').DIRECTORY_SEPARATOR);
 define('WEBPATH', 	realpath(DOCROOT.'/web/').DIRECTORY_SEPARATOR);
-
-//echo phpinfo();
 
 // Boot the core system
 require_once COREPATH."bootstrap.php";
