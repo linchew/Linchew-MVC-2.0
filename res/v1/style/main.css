@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Helvetica Neue", "Microsoft Jhenghei", Helvetica, Arial, Geneva, sans-serif;
+	font-size: 12px;
+	width:100%;
+	margin:auto;	
+}
+
+a{
+	text-decoration:none;
+}
+
+/********************************************
+* Shared Object:Alert						*
+*********************************************/
+.error{
+	background-color: #FFEBE8;
+	border-color: #C00;
+	padding: 5px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	display:none;
+}
+
+/********************************************
+* Shared Object:*							*
+*********************************************/
+.clear{
+	clear:both;
+}
+
+/********************************************
+* Shared Object:							*
+*********************************************/
+._fl			{ float:left;}
+._fr			{ float:right;}
+
+._ac			{ text-align: center; }
+._al			{ text-align: left; }
+._ar			{ text-align: right; }
+
+._block			{ display:inline-block;}
+._hide			{ display:none;}
+._absolute		{ position:absolute;}
+
+._vm			{ vertical-align:middle;}
+._vt			{ vertical-align:top;}
+._vb			{ vertical-align:bottom;}
+
+._bold			{ font-weight:bold;}
+
+/*COLOR*/
+._white			{ color:white !important; }
+._red			{ color:red !important; }
+._green			{ color:green !important; }
+._blue			{ color:#6495ed !important; }
+._lightyellow	{ color:#FFCC22 !important;}
+._grey			{ color:grey !important; }
+._lightgrey		{ color:#BBB !important;}
+._darkgrey		{ color:#555 !important; }
+._orange		{ color:orange !important; }
+
+/*Padding, Margin, Border*/
+._paddingTop	{ padding-top:5px;}
+._paddingBottom	{ padding-bottom:5px;}
+._paddingLeft	{ padding-left:5px;}
+._padding		{ padding:10px 0px;}
+._padding5		{ padding:5px 0px;}
+._margin		{ margin:10px 0px;}
+._margin5		{ margin:5px 0px;}
+._marginBottom	{ margin-bottom:10px;}
+._borderU		{ border-top:1px solid #CCC;}
+._borderB		{ border-bottom:1px solid #CCC;}
+._borderR		{ border-right:1px solid #CCC;}
+
+/*Radius, Shadow*/
+._radius		{
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+._shadow		{
+	-moz-box-shadow:2px 2px 10px #CCC;
+	-webkit-box-shadow:2px 2px 10px #CCC ;
+	box-shadow:2px 2px 10px #CCC;
+}
+
+/*Font*/
+._font10		{ font-size:10px;}
+._font14		{ font-size:14px;}
+._font16		{ font-size:16px;}
+._font18		{ font-size:16px;}
+._font20		{ font-size:20px;}
+._font24		{ font-size:24px;}
+._font32		{ font-size:32px;}
+._font40		{ font-size:40px;}
